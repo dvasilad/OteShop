@@ -10,6 +10,8 @@ public class OteShop1 {
         System.out.println(customer2.getAddress());
 
         fgfgf
+                kdkdkdk
+                
 
     }
 }

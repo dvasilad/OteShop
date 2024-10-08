@@ -9,5 +9,7 @@ public class OteShop1 {
         customer2.setAddress("Berlin");
         System.out.println(customer2.getAddress());
 
+        fgfgf
+
     }
 }

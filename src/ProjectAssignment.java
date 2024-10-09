@@ -1,0 +1,17 @@
+public class ProjectAssignment {
+
+    private String title;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public ProjectAssignment(String atitle) {
+        title = atitle;
+
+    }
+}

@@ -1,10 +1,12 @@
+// Book.java
 public class Book {
-    //attributes, constructors, setters/getters
     private String summary;
-    private int numberOfPages;
+    private int pages;
 
-    public Book(String carreerShifter, int i) {
-
+    // attributes, con & get/set
+    public Book(String summary, int pages) {
+        this.summary = summary;
+        this.pages = pages;
     }
 
     public String getSummary() {
@@ -15,26 +17,25 @@ public class Book {
         this.summary = summary;
     }
 
-    public int getNumberOfPages() {
-        return numberOfPages;
+    public int getPages() {
+        return pages;
     }
 
-    public void setNumberOfPages(int numberOfPages) {
-        this.numberOfPages = numberOfPages;
+    public void setPages(int pages) {
+        this.pages = pages;
     }
-    
-        //repeating characters
-        public boolean isRepeatingSummary() {
-            return Utilities.getFirstRepeatedCharacter(this.summary) != -1;
-        }
 
+    // method is repeating
+    public boolean isRepeatingSummary() {
+        return Utilities.getFirstRepeatedCharacter(this.summary) != -1;
+    }
 
-    //method showPagesToRead
-        public void showPagesToRead() {
-        int pages = 0;
+    // method read pages
+    public void showPagesToRead() {
         int middlePage = pages / 2;
         System.out.println("Starting from page: " + middlePage);
         Utilities.goDownToOne(middlePage);
     }
-
 }
+
+

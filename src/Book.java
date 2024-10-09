@@ -3,6 +3,10 @@ public class Book {
     private String summary;
     private int numberOfPages;
 
+    public Book(String carreerShifter, int i) {
+
+    }
+
     public String getSummary() {
         return summary;
     }
